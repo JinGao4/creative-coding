@@ -32,3 +32,25 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+<!-- HTML Structure:
+<canvas id="game" width="640" height="400"></canvas>
+This is the game area where everything is drawn — player, obstacles, score, etc.
+
+CSS Styling:
+Ensures there's no default margin or padding, and the canvas is centered and fills the background.
+
+overflow: hidden prevents the page from scrolling, which is great for full-screen game behavior.
+
+JavaScript File Loading Order:
+You are loading scripts in the right order — dependencies first, then the entry point:
+
+text.js – defines Text class used in UI.
+
+Game.js – the main game controller.
+
+Obstacle.js – defines obstacle behavior.
+
+Player.js – defines player movement and input.
+
+main.js – where you likely instantiate the Game and kick things off.-->
