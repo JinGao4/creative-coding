@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chrome Dino Replica</title>
+  <title>project</title>
   <style>
     * {
       margin: 0;
@@ -12,11 +12,23 @@
     }
     canvas {
       display: block;
+      background-color: white;
+      margin: 0 auto;
+    }
+    body {
+      background-color: #f0f0f0;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
   <canvas id="game" width="640" height="400"></canvas>
-  <script src="sketch.js"></script>
+  
+  <!-- Load JavaScript files in proper order -->
+  <script src="js/text.js"></script>
+  <script src="js/classes/Game.js"></script>
+  <script src="js/classes/Obstacle.js"></script>
+  <script src="js/classes/Player.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
